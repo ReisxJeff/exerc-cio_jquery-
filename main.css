@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgb(30, 96, 141);
+}
+
+#gerenciadorDeTempo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+}
+
+.apresentacao{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+    margin-top: 200px;
+    z-index: 2;
+    background-color: rgb(190, 179, 25);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 900px;
+    padding: 10px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.textoApresentacao{
+    text-align: start;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#gerenciadorDeTempo p{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 100px;
+    padding: 18px;
+    max-width: 450px;
+}
+
+
+.botaoMenu button{
+    cursor: pointer;
+    width: 95px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: rgb(50, 98, 20);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.botaoMenu button i{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.botaoMenu :hover{
+    background-color:rgb(71, 146, 24);
+}
+
+.concluido{
+    text-decoration: line-through;
+}
+
+#registro{
+    position: absolute;
+    background-color: rgb(190, 179, 25);
+    width: 400px;
+    height: 550px;
+    margin-top: 230px;
+    margin-left: 350px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#registro h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.formulario{
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.formulario label{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.formulario input{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.formulario textarea{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 145px;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.botoes button{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.v{
+    background-color: rgb(50, 98, 20);
+}
+
+.v:hover{
+    background-color:rgb(71, 146, 24);
+}
+
+.x{
+    background-color: rgb(124, 27, 27);
+}
+
+.x:hover{
+    background-color: rgb(178, 29, 29);
+}
+
+
+.Tarefas{
+    background-color: rgb(190, 179, 25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 700px;
+    max-width: 90%;
+    height: 700px;
+    max-height: 80%;
+    margin: 150px 400px 70px 10px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.tituloLista{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.tituloLista h1{
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.lista ul{
+    width: 100%;
+}
+
+.lista li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.lista .tarefa,
+.lista .tempo,
+.lista .data,
+.lista .nota{
+    flex: 2;
+    padding: 0 10px;
+}
+
+.remover{
+    width: 68px;
+    border-radius: 20px;
+    background: none;
+    border: 3px solid;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 25px;
+}

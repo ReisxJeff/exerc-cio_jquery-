@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <title>Gerenciador de tempo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div id="gerenciadorDeTempo">
+        <div class="apresentacao">
+            <h1 class="titulo">Gerenciador de tempo</h1>
+            <h2 class="textoApresentacao">Aprenda a <b>gerenciar</b> seu tempo para melhor organização do seu dia ,faça isso de forma <b>fácil</b> é <b>prática</b> </h2>
+            <p class="informacao">click no botão "+" para adicionar uma nova tarefa!</p>
+            <div class="botaoMenu">
+                <button type="submit" id="menu">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div id="registro">
+            <header>
+                <h1>Nova Tarefa!</h1>
+            </header>
+            <form class="formulario">
+                <div class="novaTarefa">
+                    <label for="novaTarefa">Nova Tarefa:</label>
+                    <input type=" text" name="text" id="text" placeholder="Qaul a nova tarefa?" required>
+                </div>
+                <div class="time">
+                    <label for="time">Hora:</label>
+                    <input type="time" name="tempo" id="tempo" placeholder="00:00">
+                </div>
+                <div class="date">
+                    <label for="date">Data:</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="anotacao">
+                    <label for="anotacao">Anotação:</label>
+                    <textarea name="anotacao" id="nota"></textarea>
+                </div>
+                <div class="botoes" >
+                    <button type="submit" class="v">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button type="reset" class="x" id="botaoCancelar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Tarefas">
+        <div class="tituloLista">
+            <h1>Tarefas!!</h1>
+        </div>
+        <div class="lista">
+            <ul class="notacao">
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
